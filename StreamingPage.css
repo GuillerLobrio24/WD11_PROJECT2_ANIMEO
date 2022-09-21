@@ -17,19 +17,6 @@ body {
 .anchoredLogo:hover{
     color: #374151;
 }
-.anchored-link-button{
-    border: none;
-}
-.anchored-link{
-    color: white;
-    font-weight: 500;
-    font-size: 13pt;
-    transition: .5s;
-    text-decoration: none;
-}
-.anchored-link:hover{
-    color: #374151;
-}
 .anchoredLinks a{
     color: white;
     font-weight: 500;
@@ -45,11 +32,22 @@ body {
     border: none;
     border-radius: 50px;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 20px;
     font-size: 17px;
+}
+/* Navigation Bar Css - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .searchBar input[type=text] {
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
 /* Streaming Container Css - Big Monitor */
 .streamAnime-section{
+    margin-top: 30px;
     padding: 50px;
     background-color: #374151;
     margin-bottom: 50px;
@@ -57,6 +55,11 @@ body {
 /* Streaming Container Css - 760 Monitor */
 @media only screen and (max-width:760px){
     .streamAnime-section{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0px;
+        padding-top: 30px;
         margin-bottom: 50px;
     }
     .video-section{
@@ -64,6 +67,25 @@ body {
     }
     .reaction-section-container{
         width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Streaming Container Css - 480 Monitor */
+@media only screen and (max-width:480px){
+    .streamAnime-section{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0px;
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .video-section{
+        width: 100%;
+    }
+    .reaction-section-container{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 /* Video Section Css */
@@ -72,7 +94,7 @@ body {
     border: none;
     border-radius: 10px;
 }
-/* Reaction Section Css */  
+/* Reaction Section Css - Big Monitor */ 
 .reaction-section-container{
     width: 95%;
     margin-top: 20px;
@@ -141,6 +163,13 @@ body {
     color: black;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+/* Reaction Section Css - Big Monitor */
+@media only screen and (max-width:480px){
+    .react-content .btn-secondary {
+        padding: 5px;
+        font-size: 10px;
+    }
 }
 /* Thumbnail Section Css - Big Monitor */
 .watchList-container{

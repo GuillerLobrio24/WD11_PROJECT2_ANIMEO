@@ -1,7 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+:root {
+  /* color */
+  --bg-black: #192026;
+  --bg-grey: #374151;
+  --bg-white: #f1efef;
+
+  /**typography**/
+
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+
+  /**font size **/
+
+  /**30px**/
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.375rem;
+  --fs-4: 1.125rem;
+
+  /**14px**/
+  --fs-5: 0.875rem;
+  --fs-6: 0.813rem;
+  --fs-7: 0.75rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**transition**/
+
+  --transition: 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 body {
+  font-family: var(--ff-poppins);
+  background-color: var(--bg-black);
+  overflow-x: auto;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-roboto);
+}
+
+p {
+  font-family: var(--ff-poppins);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+i {
+  display: block !important;
+}
+img {
+  width: 100%;
+  margin:0 !important;
+  padding:0 !important;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+/* body {
     font-family: 'Roboto', sans-serif;
     background-color: #192026;
-}
+} */
 .navigation-container{
     margin-top: 20px;
 }
@@ -13,6 +83,19 @@ body {
     transition: .5s;
 }
 .anchoredLogo:hover{
+    color: #374151;
+}
+.anchored-link-button{
+    border: none;
+}
+.anchored-link{
+    color: white;
+    font-weight: 500;
+    font-size: 13pt;
+    transition: .5s;
+    text-decoration: none;
+}
+.anchored-link:hover{
     color: #374151;
 }
 .anchoredLinks a{
@@ -73,6 +156,10 @@ body {
     height: 350px;
     background-color: #7F8389;
 }
+.guide-section-card a{
+    text-decoration: none;
+    color: white;
+}
 .guideHeading5{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -109,7 +196,341 @@ body {
 .faq-collapse{
     background-color: #7F8389;
 }
+.modal-content{
+    padding: 50px;
+}
+.loginModalHeader1{
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.submit-btn{
+    border: none;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #D9D9D9;
+    transition: .5s;
+}
+.submit-btn:hover{
+    color: white;
+    background-color: #7F8389;
+}
+.reset-btn{
+    border: none;
+    width: 100%;
+    background-color: #D9D9D9;
+    transition: .5s;
+}
+.reset-btn:hover{
+    color: white;
+    background-color: #7F8389;
+}
+.loginModalHeader5{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.login-modal-image{
+    object-fit: cover;
+}
 .footer-section{
     height: 200px;
     background-color: #192026;
 }
+/* footer section CSS */
+
+.footer-section{
+    padding: 2%;
+    background: var(--bg-white);
+  }
+  .footer-section a{
+    text-decoration: none;
+    color: var(--bg-black);
+  }
+  .footer-section a:hover{
+    text-decoration:underline;
+    color: blue;
+  }
+  .footer-section i:hover{
+    font-weight: var(--fw-700);
+    text-decoration:underline;
+    color: blue;
+  }
+  .footer-section h1:hover{
+    text-decoration:underline;
+    color: blue;
+  }
+
+
+  .first-row h1{
+    color: var(--bg-black);
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-row a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-row a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-row a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--bg-black);
+  }
+  .icon-box {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px!important;
+    color: var(--bg-black);
+  }
+  .ender {
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  }
+.navigation-container{
+    margin-top: 20px;
+}
+.anchoredLogo{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 40pt;
+    transition: .5s;
+}
+.anchoredLogo:hover{
+    color: #374151;
+}
+.anchored-link-button{
+    border: none;
+}
+.anchored-link{
+    color: white;
+    font-weight: 500;
+    font-size: 13pt;
+    transition: .5s;
+    text-decoration: none;
+}
+.anchored-link:hover{
+    color: #374151;
+}
+.anchoredLinks a{
+    color: white;
+    font-weight: 500;
+    font-size: 13pt;
+    transition: .5s;
+}
+.anchoredLinks:hover{
+    color: #374151;
+}
+.subscription-section{
+    margin-top: 50px;
+    background-image: url("Images/hero/hero-2.jpg");
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.subscriptionHeading1{
+    text-align: center;
+    font-weight: bold;
+}
+.subscriptionHeading5{
+    text-align: center;
+    font-weight: 500;
+}
+.subscriptionButton{  
+    background-color: #374151;  
+    display: flex;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: .5s;
+}
+.subscriptionButton:hover{
+    background-color: #7F8389;
+    color: white;
+}
+.subscriptionAnchoredLink{
+    color: white;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-weight: bold;
+}
+.subscriptionAnchoredLink:hover{
+    color:black;
+}
+.guide-section{
+    margin-top: 100px;
+    background-color: #192026;
+}
+.guide-section-card{
+    border: none;
+    border-radius: 10px;
+    height: 350px;
+    background-color: #7F8389;
+}
+.guide-section-card a{
+    text-decoration: none;
+    color: white;
+}
+.guide-section-card h5{
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20pt;
+}
+.guide-section-card i{
+    margin-top: 90px;
+    overflow: hidden;
+    font-size: 50px;    
+    color: white;
+    text-align: center;
+}
+.faq-section{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background-color: #7F8389;
+}
+.faqHeading1{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.faq-button{
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    transition: .5s;
+}
+.faq-button:hover{
+    border: none;
+    color: white;
+    background-color: #192026;
+}
+.faqHeading2{
+    text-align: start;
+}
+.faq-collapse{
+    background-color: #7F8389;
+}
+.modal-content{
+    padding: 50px;
+}
+.loginModalHeader1{
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.submit-btn{
+    border: none;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #D9D9D9;
+    transition: .5s;
+}
+.submit-btn:hover{
+    color: white;
+    background-color: #7F8389;
+}
+.reset-btn{
+    border: none;
+    width: 100%;
+    background-color: #D9D9D9;
+    transition: .5s;
+}
+.reset-btn:hover{
+    color: white;
+    background-color: #7F8389;
+}
+.loginModalHeader5{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.login-modal-image{
+    object-fit: cover;
+}
+/* footer section CSS */
+
+.footer-section{
+    padding: 2%;
+    background: var(--bg-white);
+  }
+  .footer-section a{
+    text-decoration: none;
+    color: var(--bg-black);
+  }
+  .footer-section a:hover{
+    text-decoration:underline;
+    color: blue;
+  }
+  .footer-section i:hover{
+    font-weight: var(--fw-700);
+    text-decoration:underline;
+    color: blue;
+  }
+  .footer-section h1:hover{
+    text-decoration:underline;
+    color: blue;
+  }
+
+
+  .first-row h1{
+    color: var(--bg-black);
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-row a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-row a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-row a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--bg-black);
+  }
+  .icon-box {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px!important;
+    color: var(--bg-black);
+  }
+  .ender {
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  }
