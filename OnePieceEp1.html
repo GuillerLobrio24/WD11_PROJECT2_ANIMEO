@@ -116,17 +116,23 @@
 
                         </button>
 
+                        <p id="subscribe"></p>
+
                         <button class="btn-secondary like-review">
 
                             <i class="bi bi-hand-thumbs-up" aria-hidden="false"></i> Like
 
                         </button>
 
+                        <p id="like"></p>
+
                         <button class="btn-secondary unlike-review">
 
                             <i class="bi bi-hand-thumbs-down" aria-hidden="false"></i> Unlike
 
                         </button>
+
+                        <p id="unlike"></p>
                         
                     </div>
 
@@ -645,6 +651,24 @@
 		$(this).children('.bi-hand-thumbs-down').addClass('animate-like');
 	});
 });
+
+    var counter1 = 0;
+            var counter2 = 0;
+            var counter3 = 0;
+    $(".subscribe-review").click(function(){
+    counter1 += 1;
+    $("#subscribe").text(counter1);
+    });
+
+    $(".like-review").click(function(){
+    counter1 += 1;
+    $("#like").text(counter1);
+    });
+
+    $(".unlike-review").click(function(){
+    counter1 += 1;
+    $("#unlike").text(counter1);
+    });
 
 
 </script>
