@@ -106,19 +106,19 @@
                           Subscribe
 
                         </button>
-
+                        <p id="subscribe"></p>
                         <button class="btn-secondary like-review">
 
                             <i class="bi bi-hand-thumbs-up" aria-hidden="false"></i> Like
 
                         </button>
-
+                        <p id="like"></p>
                         <button class="btn-secondary unlike-review">
 
                             <i class="bi bi-hand-thumbs-down" aria-hidden="false"></i> Unlike
 
                         </button>
-                        
+                        <p id="unlike"></p>
                     </div>
 
                 </div>
@@ -507,22 +507,62 @@
         </div>        
 
     </div>
-
-<!-- Footer -->
-
-     <div class="container-fluid footer-section">
-
-        <div class="row align-items-center">
-
-            <div class="col-md-12">
-                <br>
-            </div>
-
+</div>
+ <!-- Footer -->
+ <footer>
+    <div class="container-fluid footer-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-3 col-12 ms-auto">
+          <div class="first-row text-center">
+            <a href=""><h1>Animeo</h1></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-xs-12 col-12 ms-auto">
+          <div class="second-row text-center">
+            <a href="HomePage.html">Home</a>
+            <a href="WatchPage.html">Watch</a>
+            <a href="AboutContact.html">About</a>
+          </div>
         </div>
 
+        <div class="col-lg-2 col-md-2 col-12 ms-auto">
+          <div class="third-row text-center">
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Log-In</a>
+            <a href="SignUpPage.html">Sign-up</a>
+            <a href=""type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Account</a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-12 ms-auto">
+          <div class="fourth-row text-center">
+            <a href="index.html/#faq">FAQ's</a>
+            <a href="">Terms & Condition</a>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-12 ms-auto">
+          <div class="fifth-row text-center">
+            <h4 class="text-black">Want to know more?</h4>
+            <input type="text" class="form-control" />
+            <div class="icon-box">
+              <a href="https://www.facebook.com"><i class="bi bi-facebook bi-lg" style="font-size: 20px"></i></a>
+              <a href="https://www.instagram.com"><i class="bi bi-instagram bi-lg" style="font-size: 20px"></i></a>
+              <a href="https://www.twitter.com"><i class="bi bi-twitter bi-lg" style="font-size: 20px"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="container-fluid">
+      <div class="row text-center p-3 bg-black ender">
+        <p class="text-white">&copy; Alrights Reserved 2022</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
+<script src="/js/main.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 
@@ -544,8 +584,9 @@
 
         document.getElementById("threadItems").value = "";
     }
-
+    
     $(function(){
+        
 	$(document).one('click', '.subscribe-review', function(e) {
 		$(this).html('<i class="bi bi-bell-fill" aria-hidden="false"></i> Subscribed');
 		$(this).children('.bi-bell').addClass('animate-like');
@@ -560,6 +601,23 @@
 	});
 });
 
+        var counter1 = 0;
+        var counter2 = 0;
+        var counter3 = 0;
+$(".subscribe-review").click(function(){
+counter1 += 1;
+$("#subscribe").text(counter1);
+});
+
+$(".like-review").click(function(){
+counter1 += 1;
+$("#like").text(counter1);
+});
+
+$(".unlike-review").click(function(){
+counter1 += 1;
+$("#unlike").text(counter1);
+});
 
 </script>
 </html>
