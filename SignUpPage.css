@@ -1,112 +1,351 @@
+    /* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;700&display=swap');
+    
+        /* Root Styling */
+    
+:root {
+    
+    /* color */
+    
+    --bg-base: #94618E;
+    --bg-dark-base: #49274A;
+    --bg-off-base: #F4DECB;
+    --bg-light-off: #F8EEE7;
+    
+    /**typography**/
+    
+    --ff-righteous:'Righteous', cursive;
+    --ff-reem: 'Reem Kufi Fun', sans-serif;
+    
+      /**font size **/
+    
+    /**30px**/
+    
+    --fs-1: 1.875rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.375rem;
+    --fs-4: 1.125rem;
+    
+    /**14px**/
+    
+    --fs-5: 0.875rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+    
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    
+    /**transition**/
+    
+    --transition: 0.25s ease;
+    
+    }
+    
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+    
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #192026;
+    font-family: var(--ff-reem);
+    background-color: var(--bg-off-base);
+    overflow-x: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-righteous);
+}
+    
+p {
+    font-family: var(--ff-reem);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+i {
+    display: block !important;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* -------------- */
+
+/* Navigation Bar */
+
 .navigation-container{
-    margin-top: 20px;
+    background-color: var(--bg-dark-base);
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.anchoredLogo{
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 40pt;
-    transition: .5s;
-}
-.anchoredLogo:hover{
-    color: #374151;
+.navbar-toggler{
+    background-color: var(--bg-light-off);
 }
 .anchored-link-button{
     border: none;
 }
 .anchored-link{
     color: white;
-    font-weight: 500;
-    font-size: 13pt;
     transition: .5s;
     text-decoration: none;
 }
-.anchored-link:hover{
-    color: #374151;
+/* Anchored Link - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .anchoredLinks button{
+        padding: 0px;
+        display: block;
+        float: left;
+    }
+    .anchoredLinks a{
+        display: block;
+        float: left;
+    }
 }
 .anchoredLinks a{
-    text-decoration: none;
     color: white;
-    font-weight: 500;
-    font-size: 13pt;
     transition: .5s;
 }
+/* Anchored Link - Hover*/
 .anchoredLinks a:hover{
-    color: #374151;
+    color: var(--bg-base);
 }
+
+/* -------------- */
+
+/* Sign Up - Section */
+
+.signUp-section-container{
+    margin-top: 1px;
+    padding-top: 50px;
+    background-color: var(--bg-base);
+}
+/* Steps - Section */
 .steps-section{
-    background-color: #374151;
+    background-color:var(--bg-dark-base);
     padding: 10px;
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+/* Steps Section - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .steps-section{
+        background-color:var(--bg-dark-base);
+        padding: 5px;
+        width: 100%;
+        display: flex;
+    }
 }
 .steps-section a{
-    width:  100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+.steps-section button{
+    background-color: var(--bg-light-off);
 }
 .step1-btn{
     width: 99%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #7F8389;
-    color: white;
-    border: none;
-}
-.step1-btn:hover{
-    background-color: #D9D9D9;
     color: black;
     border: none;
+    cursor: pointer;
+}
+/* Button - Active */
+.btn.active, .step1-section button{
+    background-color: var(--bg-base);
+    color: white;
 }
 .step2-btn{
     width: 99%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #D9D9D9;
     color: black;
     border: none;
-}
-.step2-btn:hover{
-    background-color: #7F8389;
-    color: white;
-    border: none;
+    cursor: pointer;
 }
 .step3-btn{
     width: 99%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #D9D9D9;
     color: black;
     border: none;
+    cursor: pointer;
 }
-.step3-btn:hover{
-    background-color: #7F8389;
+/* Step Section - Hover */
+.step1-btn:hover{
+    background-color: var(--bg-base);
     color: white;
     border: none;
 }
-.signUp-section-container{
-    padding: 50px;
-    background-color: #7F8389;
+.step2-btn:hover{
+    background-color: var(--bg-base);
+    color: white;
+    border: none;
 }
+.step3-btn:hover{
+    background-color: var(--bg-base);
+    color: white;
+    border: none;
+}
+/* Form - Section */
 .signUp-section-form{   
     width: 33%;
     margin: auto;
     margin-top: 30px;
 }
+/* Form Section - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .signUp-section-form{   
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+.signUpHeading1{
+    color:white
+}
+.form-group label{
+    color: white;
+}
 .next-btn{
     width: 100%;
-    background-color: #D9D9D9;
+    background-color: var(--bg-light-off);
     color: black;
     border: none;
+    margin-bottom: 50px;
 }
 .next-btn:hover{
     border: none;
-    background-color: #374151;
+    background-color: var(--bg-dark-base);
     color: white;
 }
+
+/* -------------- */
+
+/* Footer Section CSS */
+
+.footer-section{
+    padding: 2%;
+    background: var(--bg-off-base);
+}
+.footer-section a{
+    text-decoration: none;
+    color: var(--bg-black);
+}
+/* Footer - Hover*/
+.footer-section a:hover{
+    text-decoration:underline;
+    color: blue;
+}
+.footer-section i:hover{
+    font-weight: var(--fw-700);
+    text-decoration:underline;
+    color: blue;
+}
+.footer-section h1:hover{
+    text-decoration:underline;
+    color: blue;
+}
+/* Footer Content*/
+.first-row img{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/* Footer  - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .first-row{
+        align-items: center;
+        justify-content: center;
+    }
+    .first-row img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+.second-row a{
+    margin-top: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.third-row a{
+    margin-top: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.fourth-row a{
+    margin-top: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.fifth-row {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--bg-black);
+}
+.fifthHeading4{
+    color: black;
+}
+.icon-box{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px!important;
+    color: var(--bg-dark-base);
+}
+.ender {
+    background-color: var(--bg-dark-base);
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+/* Footer Content - Hover*/
+.second-row a:hover{
+    text-decoration: none;
+    color: var(--bg-base);
+}
+.third-row a:hover{
+    text-decoration: none;
+    color: var(--bg-base);
+}
+.fourth-row a:hover{
+    text-decoration: none;
+    color: var(--bg-base);
+}
+.icon-box i:hover{    
+    color: var(--bg-base);
+}
+
+/* -------------- */

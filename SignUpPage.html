@@ -17,48 +17,53 @@
 
     <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-lg">
-        
-        <div class="container navigation-container" >
+    <nav class="navbar navbar-expand-lg navigation-container">
 
-            <!-- Navigation Bar Logo -->
+        <div class="container">
 
-            <a href="index.html" class="anchoredLogo">
-                <!-- <img class="navbar-brand d-block" src="" width="100%" height="100px"> -->
-                AnimeO
-            </a>
+          <!-- Navigation Bar Logo -->
 
-            <!-- Navigation Bar Collapse Button for Page Responsiveness -->
+          <a href="index.html" class="anchoredLogo">
 
-            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <img class="navbar-brand w-100 d-block" src="Images/logo/AnimeO-1.png" width="80%" height="80px">
 
-            <div class="collapse navbar-collapse" id="navbarExample">
-                
-                <!-- Navigation Bar Anchored Links -->
+          </a>
 
-                <div class="container">
+          <!-- Navigation Bar Collapse Button for Page Responsiveness -->
 
-                    <div class="row align-items-center">
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarExample">
 
-                        <div class="col-md-10">
-                            <br>
-                        </div>  
-                        
-                        <div class="col-md-2 anchoredLinks">
-                            <a href="index.html">Sign Out</a>
-                        </div>  
+            <span class="navbar-toggler-icon"></span>
 
-                    </div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarExample">
+
+            <!-- Navigation Bar Anchored Links -->
+  
+            <div class="container">
+
+              <div class="row align-items-center">
+
+                <div class="col-md-10">
+                  <br />
+                </div>
+
+                <div class="col-md-2 anchoredLinks">
+
+                  <a class="nav-link" href="index.html"><h3>Sign Out</h3></a>
 
                 </div>
 
+              </div>
+
             </div>
+
+          </div>
 
         </div>
 
-    </nav>
+      </nav>
 
     <!-- Sign Up Section Container -->
 
@@ -66,7 +71,7 @@
 
         <div class="container steps-section">
 
-            <a href="SignUpPage.html"><button class="btn step1-btn" >Step 1</button></a>
+            <a href="SignUpPage.html"><button class="btn step1-btn active " >Step 1</button></a>
             <a href="SignUpPage2.html"><button class="btn step2-btn" >Step 2</button></a>
             <a href="SignUpPage3.html"><button class="btn step3-btn" >Step 3</button></a>
         
@@ -80,7 +85,7 @@
 
                 <form>
 
-                    <h1>Enter Email Address</h1>
+                    <h1 class="signUpHeading1">Enter Email Address</h1>
 
                     <div class="form-group">
 
@@ -107,7 +112,6 @@
 
                 <a href="SignUpPage2.html"><button class="btn next-btn">Next</button></a>
 
-
             </div>
 
         </div>
@@ -116,17 +120,97 @@
 
     <!-- Footer -->
 
-    <div class="container-fluid footer-section">
+    <footer>
 
-        <div class="row align-items-center">
-
-            <div class="col-md-12">
-                <br>
+        <div class="container-fluid footer-section">
+  
+          <div class="row justify-content-center align-items-center">
+  
+            <div class="col-lg-3 col-md-3 col-12 ms-auto">
+  
+              <div class="first-row">
+  
+                <a href="" class="anchoredLogo">
+  
+                  <img src="Images/logo/AnimeO-2.png" alt="">
+  
+                </a>
+  
+              </div>
+  
             </div>
-
+  
+            <div class="col-lg-2 col-md-2 col-xs-12 col-12 ms-auto">
+  
+              <div class="second-row text-center">
+  
+                <a href="">Home</a>
+                <a href="">Watch</a>
+                <a href="">About</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-2 col-md-2 col-12 ms-auto">
+  
+              <div class="third-row text-center">
+  
+                <a href="">Log-In</a>
+                <a href="">Sign-up</a>
+                <a href="">Account</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-2 col-md-2 col-12 ms-auto">
+              
+              <div class="fourth-row text-center">
+  
+                <a href="">FAQ's</a>
+                <a href="">Terms & Condition</a>
+                <a href="">Privacy Policy</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-3 col-md-3 col-12 ms-auto">
+  
+              <div class="fifth-row text-center">
+  
+                <h4 class="fifthHeading4">Want to know more?</h4>
+  
+                <input type="text" class="form-control" />
+  
+                <div class="icon-box">
+  
+                  <i class="bi bi-facebook bi-lg" style="font-size: 30px"></i>
+                  <i class="bi bi-instagram bi-lg" style="font-size: 30px"></i>
+                  <i class="bi bi-twitter bi-lg" style="font-size: 30px"></i>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
         </div>
-
-    </div>
+  
+        <div class="container-fluid">
+  
+          <div class="row text-center p-3 ender">
+  
+            <p class="text-white">&copy; Alrights Reserved 2022</p>
+  
+          </div>
+  
+        </div>
+  
+      </footer>
     
 </body>
 <script>

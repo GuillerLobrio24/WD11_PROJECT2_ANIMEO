@@ -16,198 +16,273 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="icon" href="" /> -->
+    <link rel="icon" href="" />
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container navigation-container">
-        <!-- Navigation Bar Logo -->
-        <a href="index.html" class="anchoredLogo">
-          <!-- <img class="navbar-brand d-block" src="" width="100%" height="100px"> -->
-          AnimeO
-        </a>
-        <!-- Navigation Bar Collapse Button for Page Responsiveness -->
-        <button
-          class="navbar-toggler bg-light"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarExample"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample">
-          <!-- Navigation Bar Anchored Links -->
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-1">
-                <br />
+    <nav class="navbar navbar-expand-lg navigation-container">
+        
+      <div class="container" >
+
+          <!-- Navigation Bar Logo -->
+
+          <a href="index.html" class="anchoredLogo">
+
+              <img class="navbar-brand w-100 d-block" src="Images/logo/AnimeO-1.png" width="80%" height="80px">
+
+          </a>
+
+          <!-- Navigation Bar Collapse Button for Page Responsiveness -->
+
+          <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+
+              <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarExample">
+              
+              <!-- Navigation Bar Anchored Links -->
+
+              <div class="container">
+
+                  <div class="row align-items-center">
+
+                      <div class="col-md-1">
+                          <br>
+                      </div>  
+
+                      <div class="col-md-2 anchoredLinks">
+                          
+                          <a class="nav-link" href="HomePage.html"><h3>Home</h3></a>
+
+                      </div>
+      
+                      <div class="col-md-2 anchoredLinks">
+
+                          <a class="nav-link" href="WatchPage.html"><h3>Watch</h3></a>
+
+                      </div>
+
+                      <div class="col-md-3">
+                          <br>
+                      </div>  
+
+                      <div class="col-md-4 searchBar">
+
+                          <form action="">
+                              <input type="text" placeholder="    Search Anime Here" >
+                          </form>
+
+                      </div>  
+
+                  </div>
+
               </div>
-              <div class="col-md-1 anchoredLinks">
-                <a class="nav-link" href="HomePage.html">Home</a>
-              </div>
-              <div class="col-md-2 anchoredLinks">
-                <a class="nav-link" href="WatchPage.html">Watch</a>
-              </div>
-              <div class="col-md-4">
-                <br />
-              </div>
-              <div class="col-md-4 searchBar">
-                <form action="">
-                  <input type="text" placeholder="    Search Anime Here" />
-                </form>
-              </div>
-            </div>
+              
           </div>
-        </div>
+
       </div>
-    </nav>
+
+  </nav>
+
     <!-- Preview Section Container -->
-    <div class="container preview-section">
+
+    <div class="container-fluid preview-section">
+
       <h1 class="previewHeading1">Featuring</h1>
+      
       <h5 class="previewHeading5">What are you gonna Watch today?</h5>
 
       <div class="d-flex justify-content-center align-items-center preview-section-container">
 
           <div class="container imageBox pt-5">
-            <img
-              id="img1"
-              class="card card--active"
-              src="./Images/popular/popular-1.jpg"
-              style="width: 100%; display: block; margin-inline: auto"
-            />
-            <img
-              id="img2"
-              class="card card--left"
-              src="./Images/popular/popular-2.jpg"
-              style="width: 100%; display: block; margin-inline: auto"
-            />
 
-            <img
-              id="img3"
-              class="card card--outerleft"
-              src="./Images/popular/popular-4.jpg"
-              style="width: 100%; display: block; margin-inline: auto"
-            />
-            <img
-              id="img4"
-              class="card card--outerright"
-              src="./Images/popular/popular-6.jpg"
-              style="width: 100%; display: block; margin-inline: auto"
-            />
-            <img
-              id="img5"
-              class="card card--right"
-              src="./Images/popular/popular-3.jpg"
-              style="width: 100%; display: block; margin-inline: auto"
-            />
+            <img id="img1" class="card card--active" src="./Images/trend/trend-1.webp" style="width: 100%; display: block; margin-inline: auto"/>
+
+            <img id="img2" class="card card--left" src="./Images/trend/trend-2.webp" style="width: 100%; display: block; margin-inline: auto"/>
+
+            <img id="img3" class="card card--outerleft" src="./Images/trend/trend-3.webp" style="width: 100%; display: block; margin-inline: auto"/>
+
+            <img id="img4" class="card card--outerright" src="./Images/trend/trend-4.webp" style="width: 100%; display: block; margin-inline: auto" />
+
+            <img id="img5" class="card card--right" src="./Images/trend/trend-5.webp" style="width: 100%; display: block; margin-inline: auto"/>
+
           </div>
         </div>
 
     </div>
 
     <!-- New Release Section Container -->
-    <div class="container newRealease-section">
+
+    <div class="container-fluid newRealease-section">
+
       <h1 class="newRealeaseHeading1">New Release</h1>
+
       <h5 class="newRealeaseHeading5">Find out New Release to Watch!</h5>
+
       <div class="row align-items-center newRealease-section-container">
+        
         <div class="col-md-1">
           <br />
         </div>
-        <div class="col-md-3 newRealease-card">
-          <br />
+
+        <div class="col-md-2 newRealease-card1">
+          
+          <img class="d-block" src="Images/new/new-1.webp" alt="">
+
         </div>
+
         <div class="col-md-1">
           <br />
         </div>
-        <div class="col-md-6">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus animi quod perferendis doloremque neque autem
-            possimus ut odit consequatur debitis inventore quis placeat
-            praesentium, quos tenetur nostrum? Nihil, accusamus. Et.
+
+        <div class="col-md-7">
+
+          <h2 class="newHeading2">Fairy Mountain</h2>
+
+          <h5 class="newHeading5">Synopsis</h5>
+
+          <p class="newParagraph">
+            “Brahma”, a boy from the Eastern Kingdom, came to the Central Plains on a secret mission and lost some of his memory in a shipwreck. Brahma was rescued by a girl named Gongliangchen with a leg problem. In order to repay the life-saving grace, Brahma agreed to the request of “Hongyin” Shitai, took Lu’er and Zhen to see the wonderful book, and went down the mountain to find the immortal island recorded in the book, cured Lu’er’s leg disease, and passed through Huancuiwan. 
           </p>
+
         </div>
+
         <div class="col-md-1">
           <br />
         </div>
+
         <!--  -->
+
         <div class="col-md-1">
           <br />
         </div>
-        <div class="col-md-3 newRealease-card">
-          <br />
+
+        <div class="col-md-2 newRealease-card2">
+
+          <img class="d-block" src="Images/new/new-2.webp" alt="">
+
         </div>
+
         <div class="col-md-1">
           <br />
         </div>
-        <div class="col-md-6">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus animi quod perferendis doloremque neque autem
-            possimus ut odit consequatur debitis inventore quis placeat
-            praesentium, quos tenetur nostrum? Nihil, accusamus. Et.
+
+        <div class="col-md-7">
+
+          <h2 class="newHeading2">Nights with a Cat</h2>
+
+          <h5 class="newHeading5">Synopsis</h5>
+
+          <p class="newParagraph">
+            Fuuta-kun has never owned a cat before, but his younger sister, Pii-chan, moves into his house with the round gray cat Kyuruga. Inexperienced with cats, Fuuta-kun has no idea what to expect, and each night after he returns home is marked by odd and endearing surprises from his new pet.
           </p>
+
         </div>
+
         <div class="col-md-1">
           <br />
         </div>
+
       </div>
+
     </div>
 
     <!-- Footer -->
 
     <footer>
-      <div class="container-fluid footer-section bg-black">
+
+      <div class="container-fluid footer-section">
+
         <div class="row justify-content-center align-items-center">
+
           <div class="col-lg-3 col-md-3 col-12 ms-auto">
-            <div class="first-row text-center">
-              <a href=""><h1>Animeo</h1></a>
+
+            <div class="first-row">
+
+              <a href="" class="anchoredLogo">
+
+                <img src="Images/logo/AnimeO-1.png" alt="">
+
+              </a>
+
             </div>
+
           </div>
+
           <div class="col-lg-2 col-md-2 col-xs-12 col-12 ms-auto">
+
             <div class="second-row text-center">
+
               <a href="">Home</a>
               <a href="">Watch</a>
               <a href="">About</a>
+
             </div>
+
           </div>
 
           <div class="col-lg-2 col-md-2 col-12 ms-auto">
+
             <div class="third-row text-center">
+
               <a href="">Log-In</a>
               <a href="">Sign-up</a>
               <a href="">Account</a>
+
             </div>
+
           </div>
 
           <div class="col-lg-2 col-md-2 col-12 ms-auto">
+            
             <div class="fourth-row text-center">
+
               <a href="">FAQ's</a>
               <a href="">Terms & Condition</a>
               <a href="">Privacy Policy</a>
+
             </div>
+
           </div>
 
           <div class="col-lg-3 col-md-3 col-12 ms-auto">
+
             <div class="fifth-row text-center">
-              <h4 class="text-white">Want to know more?</h4>
+
+              <h4 class="fifthHeading4">Want to know more?</h4>
+
               <input type="text" class="form-control" />
+
               <div class="icon-box">
-                <i class="bi bi-facebook bi-lg" style="font-size:20px;"></i>
-                <i class="bi bi-instagram bi-lg" style="font-size:20px;"></i>
-                <i class="bi bi-twitter bi-lg" style="font-size:20px;"></i>
+
+                <i class="bi bi-facebook bi-lg" style="font-size: 30px"></i>
+                <i class="bi bi-instagram bi-lg" style="font-size: 30px"></i>
+                <i class="bi bi-twitter bi-lg" style="font-size: 30px"></i>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
 
       <div class="container-fluid">
+
         <div class="row text-center p-3 ender">
+
           <p class="text-white">&copy; Alrights Reserved 2022</p>
+
         </div>
+
       </div>
+
     </footer>
+
 
   </body>
   

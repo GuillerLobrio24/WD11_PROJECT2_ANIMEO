@@ -17,44 +17,49 @@
 
     <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-lg">
-        
-        <div class="container navigation-container" >
+    <nav class="navbar navbar-expand-lg navigation-container">
 
-            <!-- Navigation Bar Logo -->
+        <div class="container">
 
-            <a href="index.html" class="anchoredLogo">
-                <!-- <img class="navbar-brand d-block" src="" width="100%" height="100px"> -->
-                AnimeO
-            </a>
+        <!-- Navigation Bar Logo -->
 
-            <!-- Navigation Bar Collapse Button for Page Responsiveness -->
+        <a href="index.html" class="anchoredLogo">
 
-            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <img class="navbar-brand w-100 d-block" src="Images/logo/AnimeO-1.png" width="80%" height="80px">
 
-            <div class="collapse navbar-collapse" id="navbarExample">
-                
-                <!-- Navigation Bar Anchored Links -->
+        </a>
 
-                <div class="container">
+        <!-- Navigation Bar Collapse Button for Page Responsiveness -->
 
-                    <div class="row align-items-center">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarExample">
 
-                        <div class="col-md-10">
-                            <br>
-                        </div>  
-                        
-                        <div class="col-md-2 anchoredLinks">
-                            <a href="index.html">Sign Out</a>
-                        </div>  
+            <span class="navbar-toggler-icon"></span>
 
-                    </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarExample">
+
+            <!-- Navigation Bar Anchored Links -->
+
+            <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-10">
+                <br />
+                </div>
+
+                <div class="col-md-2 anchoredLinks">
+
+                <a class="nav-link" href="index.html"><h3>Sign Out</h3></a>
 
                 </div>
 
             </div>
+
+            </div>
+
+        </div>
 
         </div>
 
@@ -68,46 +73,17 @@
 
             <a href="SignUpPage.html"><button class="btn step1-btn" >Step 1</button></a>
             <a href="SignUpPage2.html"><button class="btn step2-btn" >Step 2</button></a>
-            <a href="SignUpPage3.html"><button class="btn step3-btn" >Step 3</button></a>
+            <a href="SignUpPage3.html"><button class="btn step3-btn active" >Step 3</button></a>
         
         </div>
 
-        <div class="row align-items-center signUp-section">
+        <div class="row align-items-center justify-content-center signUp-section">
 
             <!-- 3 -->
 
-            <div class="col-md-12 signUp-section-form" id="sample-Three">
+            <div class="col-md-12 signUp-section-form">
 
-                <div class="col-md-4 subscription-section-container-1"> 
-
-                    <h3>Student</h3>
-
-                    <br>
-
-                    <h1>P149</h1>
-                    <h4> / Month</h4>
-
-                    <br>
-
-                    <p>Perfect Way to Study while Watching your Favorite Anime</p>
-
-                    <p>Resolution : 480p</p>
-                    <p>Number of Device to Watch : 
-
-                        <i class="bi bi-1-circle"></i>
-
-                    </p>
-
-                    <p>Devices you can use to Watch : 
-
-                        <i class="bi bi-phone"></i>
-                        <i class="bi bi-tablet-landscape"></i>
-                    
-                    </p>
-
-                </div>
-
-                <div class="col-md-4 subscription-section-container">
+                <div class="col-md-3 subscription-section-container-1"> 
 
                     <h3>Standard</h3>
 
@@ -120,26 +96,86 @@
 
                     <p>Perfect Way to Relax and Watch your Favorite Anime</p>
 
+                    <br>
+
                     <p>Resolution : 720p</p>
+
+                    <br>
 
                     <p>Number of Device to Watch : 
 
-                        <i class="bi bi-2-circle"></i>
+                        <div class="container icons d-flex">
+
+                            <i class="bi bi-2-circle"></i>
+                            
+                        </div>
 
                     </p>
 
                     <p>Devices you can use to Watch : 
 
-                        <i class="bi bi-phone"></i>
-                        <i class="bi bi-tablet-landscape"></i>
-                        <i class="bi bi-laptop"></i>
-                        <i class="bi bi-tv"></i>
+                        <div class="container icons d-flex">
+
+                            <i class="bi bi-phone"></i>
+                            <i class="bi bi-tablet-landscape"></i>
+                            <i class="bi bi-laptop"></i>
+                            <i class="bi bi-tv"></i>
+                            
+                        </div>
+
+                    </p>  
                     
-                    </p>    
+                        
+
+                    <a href="SignUpPage2.html"><button class="btn subscribe-btn1">Subscribe</button></a>
 
                 </div>
 
-                <div class="col-md-4 subscription-section-container-1">
+                <div class="col-md-4 subscription-section-container">
+
+                    <h3>Student</h3>
+
+                    <br>
+
+                    <h1>P149</h1>
+                    <h4> / Month</h4>
+
+                    <br>
+
+                    <p>Perfect Way to Study while Watching your Favorite Anime</p>
+
+                    <br>
+
+                    <p>Resolution : 480p</p>
+
+                    <br>
+
+                    <p>Number of Device to Watch : 
+
+                        <div class="container icons d-flex">
+
+                            <i class="bi bi-1-circle"></i>
+
+                        </div>
+
+                    </p>
+
+                    <p>Devices you can use to Watch : 
+
+                        <div class="container icons d-flex">
+
+                            <i class="bi bi-phone"></i>
+                            <i class="bi bi-tablet-landscape"></i>
+                        
+                        </div>
+                    
+                    </p>
+
+                    <a href="SignUpPage2.html"><button class="btn subscribe-btn">Subscribe</button></a>
+
+                </div>
+
+                <div class="col-md-3 subscription-section-container-1">
 
                     <h3>Family</h3>
 
@@ -152,22 +188,36 @@
 
                     <p>Perfect Way to Relax and Watch your Favorite Anime</p>
 
+                    <br>
+
                     <p>Resolution : 1080p</p>
+
+                    <br>
 
                     <p>Number of Device to Watch : 
 
-                        <i class="bi bi-3-circle"></i>
+                        <div class="container icons d-flex">
+
+                            <i class="bi bi-3-circle"></i>
+
+                        </div>
 
                     </p>
 
                     <p>Devices you can use to Watch : 
 
-                        <i class="bi bi-phone"></i>
-                        <i class="bi bi-tablet-landscape"></i>
-                        <i class="bi bi-laptop"></i>
-                        <i class="bi bi-tv"></i>
+                        <div class="container icons d-flex">
+                            
+                            <i class="bi bi-phone"></i>
+                            <i class="bi bi-tablet-landscape"></i>
+                            <i class="bi bi-laptop"></i>
+                            <i class="bi bi-tv"></i>
+                        
+                        </div>
+
+                    </p> 
                     
-                    </p>    
+                    <a href="SignUpPage2.html"><button class="btn subscribe-btn1">Subscribe</button></a>
 
                 </div>
 
@@ -175,53 +225,104 @@
 
             </div>
 
-            <a href="SignUpPage2.html"><button class="btn next-btn">Finish</button></a>
-
         </div>
 
     </div>
 
     <!-- Footer -->
 
-    <div class="container-fluid footer-section">
+    <footer>
 
-        <div class="row align-items-center">
+        <div class="container-fluid footer-section">
 
-            <div class="col-md-12">
-                <br>
+          <div class="row justify-content-center align-items-center">
+
+            <div class="col-lg-3 col-md-3 col-12 ms-auto">
+
+              <div class="first-row">
+
+                <a href="" class="anchoredLogo">
+
+                  <img src="Images/logo/AnimeO-2.png" alt="">
+
+                </a>
+
+              </div>
+
             </div>
+
+            <div class="col-lg-2 col-md-2 col-xs-12 col-12 ms-auto">
+
+              <div class="second-row text-center">
+
+                <a href="">Home</a>
+                <a href="">Watch</a>
+                <a href="">About</a>
+
+              </div>
+
+         </div>
+
+            <div class="col-lg-2 col-md-2 col-12 ms-auto">
+
+              <div class="third-row text-center">
+
+                <a href="">Log-In</a>
+                <a href="">Sign-up</a>
+                <a href="">Account</a>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-12 ms-auto">
+              
+              <div class="fourth-row text-center">
+
+                <a href="">FAQ's</a>
+                <a href="">Terms & Condition</a>
+                <a href="">Privacy Policy</a>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-12 ms-auto">
+
+              <div class="fifth-row text-center">
+
+                <h4 class="fifthHeading4">Want to know more?</h4>
+  
+                <input type="text" class="form-control" />
+  
+                <div class="icon-box">
+
+                  <i class="bi bi-facebook bi-lg" style="font-size: 30px"></i>
+                  <i class="bi bi-instagram bi-lg" style="font-size: 30px"></i>
+                  <i class="bi bi-twitter bi-lg" style="font-size: 30px"></i>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
-    </div>
+        <div class="container-fluid">
+
+          <div class="row text-center p-3 ender">
+
+            <p class="text-white">&copy; Alrights Reserved 2022</p>
+
+          </div>
+
+        </div>
+  
+    </footer>
     
 </body>
-<script>
-
-    function nextStep(){
-
-    let buttons = document.querySelectorAll(".steps-btn");
-
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove("button-active"); 
-    }
-
-    event.target.classList.add("button-active");
-    let id = event.target.getAttribute("id");
-    showText(id);
-    }
-
-    function showText (id){
-
-    let headings = document.querySelectorAll(".hidden");
-
-    for (let i = 0; i < headings.length; i++) {
-        headings[i].classList.remove("show"); 
-    }
-
-    let showElement = document.getElementById("sample-" + id);
-    showElement.classList.add("show");
-    }
-
-</script>
+<script></script>
 </html>

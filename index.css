@@ -1,130 +1,149 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+    /* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;700&display=swap');
+
+    /* Root Styling */
 
 :root {
-  /* color */
-  --bg-black: #192026;
-  --bg-grey: #374151;
-  --bg-white: #f1efef;
 
-  /**typography**/
+/* color */
 
-  --ff-roboto: "Roboto", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
+    --bg-base: #94618E;
+    --bg-dark-base: #49274A;
+    --bg-off-base: #F4DECB;
+    --bg-light-off: #F8EEE7;
+
+/**typography**/
+
+    --ff-righteous:'Righteous', cursive;
+    --ff-reem: 'Reem Kufi Fun', sans-serif;
 
   /**font size **/
 
-  /**30px**/
-  --fs-1: 1.875rem;
-  --fs-2: 1.5rem;
-  --fs-3: 1.375rem;
-  --fs-4: 1.125rem;
+/**30px**/
 
-  /**14px**/
-  --fs-5: 0.875rem;
-  --fs-6: 0.813rem;
-  --fs-7: 0.75rem;
+    --fs-1: 1.875rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.375rem;
+    --fs-4: 1.125rem;
 
-  --fw-500: 500;
-  --fw-600: 600;
-  --fw-700: 700;
+/**14px**/
 
-  /**transition**/
+    --fs-5: 0.875rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
 
-  --transition: 0.25s ease;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+/**transition**/
+
+    --transition: 0.25s ease;
+
 }
 
 html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: var(--ff-poppins);
-  background-color: var(--bg-black);
-  overflow-x: auto;
-  overflow-x: hidden;
+    font-family: var(--ff-reem);
+    background-color: var(--bg-off-base);
+    overflow-x: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
 }
 h1,
 h2,
 h3,
-h4 {
-  font-family: var(--ff-roboto);
+h4,
+h5,
+h6 {
+    font-family: var(--ff-righteous);
 }
 
 p {
-  font-family: var(--ff-poppins);
-  margin: 0 !important;
-  padding: 0 !important;
+    font-family: var(--ff-reem);
+    margin: 0 !important;
+    padding: 0 !important;
 }
 i {
-  display: block !important;
-}
-img {
-  width: 100%;
-  margin:0 !important;
-  padding:0 !important;
+    display: block !important;
 }
 button {
-  border: none;
-  outline: none;
-  background: none;
+    border: none;
+    outline: none;
+    background: none;
 }
-/* body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #192026;
-} */
+
+/* Navigation Bar */
+
 .navigation-container{
-    margin-top: 20px;
+    background-color: var(--bg-dark-base);
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.anchoredLogo{
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 40pt;
-    transition: .5s;
-}
-.anchoredLogo:hover{
-    color: #374151;
+.navbar-toggler{
+    background-color: var(--bg-light-off);
 }
 .anchored-link-button{
     border: none;
 }
 .anchored-link{
     color: white;
-    font-weight: 500;
-    font-size: 13pt;
     transition: .5s;
     text-decoration: none;
 }
-.anchored-link:hover{
-    color: #374151;
+/* Anchored Link - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .anchoredLinks button{
+        padding: 0px;
+        display: block;
+        float: left;
+    }
+    .anchoredLinks a{
+        display: block;
+        float: left;
+    }
 }
 .anchoredLinks a{
     color: white;
-    font-weight: 500;
-    font-size: 13pt;
     transition: .5s;
 }
-.anchoredLinks:hover{
-    color: #374151;
+/* Anchored Link - Hover*/
+.anchoredLinks a:hover{
+    color: var(--bg-base);
 }
+
+/* -------------- */
+
+/* Subscription Section */
+
 .subscription-section{
-    margin-top: 50px;
-    background-color: #D9D9D9;
+    margin-top: 1px;
+    background-color: var(--bg-base);
     border: none;
-    border-radius: 10px;
     padding-top: 150px;
     padding-bottom: 150px;
 } 
 .subscriptionHeading1{
     text-align: center;
-    font-weight: bold;
+    color: white;
 }
 .subscriptionHeading5{
     text-align: center;
-    font-weight: 500;
+    color: white;
 }
 .subscriptionButton{  
-    background-color: #374151;  
+    background-color: var(--bg-light-off);
     display: flex;
     width: 30%;
     margin-left: auto;
@@ -132,11 +151,11 @@ button {
     transform: .5s;
 }
 .subscriptionButton:hover{
-    background-color: #7F8389;
+    background-color: var(--bg-dark-base);
     color: white;
 }
 .subscriptionAnchoredLink{
-    color: white;
+    color: black;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -144,393 +163,333 @@ button {
     font-weight: bold;
 }
 .subscriptionAnchoredLink:hover{
-    color:black;
+    color:white;
 }
+
+/* -------------- */
+
+/* Guide Section */
+
+/* Guide Section - Big Monitor*/
 .guide-section{
-    margin-top: 100px;
-    background-color: #192026;
-}
-.guide-section-card{
-    border: none;
-    border-radius: 10px;
-    height: 350px;
-    background-color: #7F8389;
-}
-.guide-section-card a{
-    text-decoration: none;
-    color: white;
-}
-.guideHeading5{
-    padding-top: 150px;
-    padding-bottom: 150px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20pt;
-}
-.faq-section{
-    margin-top: 100px;
+    margin-top: 5px;
     padding-bottom: 50px;
-    background-color: #7F8389;
-}
-.faqHeading1{
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
-.faq-button{
-    margin-bottom: 10px;
+    padding-top: 50px;
+    background-color: var(--bg-base);
     width: 100%;
-    background-color: #D9D9D9;
-    border: none;
-    transition: .5s;
-}
-.faq-button:hover{
-    border: none;
-    color: white;
-    background-color: #192026;
-}
-.faqHeading2{
-    text-align: start;
-}
-.faq-collapse{
-    background-color: #7F8389;
-}
-.modal-content{
-    padding: 50px;
-}
-.loginModalHeader1{
-    font-weight: 900;
-    margin-bottom: 30px;
-}
-.submit-btn{
-    border: none;
-    width: 100%;
-    margin-bottom: 5px;
-    background-color: #D9D9D9;
-    transition: .5s;
-}
-.submit-btn:hover{
-    color: white;
-    background-color: #7F8389;
-}
-.reset-btn{
-    border: none;
-    width: 100%;
-    background-color: #D9D9D9;
-    transition: .5s;
-}
-.reset-btn:hover{
-    color: white;
-    background-color: #7F8389;
-}
-.loginModalHeader5{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-.login-modal-image{
-    object-fit: cover;
-}
-.footer-section{
-    height: 200px;
-    background-color: #192026;
-}
-/* footer section CSS */
-
-.footer-section{
-    padding: 2%;
-    background: var(--bg-white);
-  }
-  .footer-section a{
-    text-decoration: none;
-    color: var(--bg-black);
-  }
-  .footer-section a:hover{
-    text-decoration:underline;
-    color: blue;
-  }
-  .footer-section i:hover{
-    font-weight: var(--fw-700);
-    text-decoration:underline;
-    color: blue;
-  }
-  .footer-section h1:hover{
-    text-decoration:underline;
-    color: blue;
-  }
-
-
-  .first-row h1{
-    color: var(--bg-black);
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .second-row a{
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .third-row a{
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .fourth-row a{
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .fifth-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: var(--bg-black);
-  }
-  .icon-box {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px!important;
-    color: var(--bg-black);
-  }
-  .ender {
-    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-  }
-.navigation-container{
-    margin-top: 20px;
-}
-.anchoredLogo{
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 40pt;
-    transition: .5s;
-}
-.anchoredLogo:hover{
-    color: #374151;
-}
-.anchored-link-button{
-    border: none;
-}
-.anchored-link{
-    color: white;
-    font-weight: 500;
-    font-size: 13pt;
-    transition: .5s;
-    text-decoration: none;
-}
-.anchored-link:hover{
-    color: #374151;
-}
-.anchoredLinks a{
-    color: white;
-    font-weight: 500;
-    font-size: 13pt;
-    transition: .5s;
-}
-.anchoredLinks:hover{
-    color: #374151;
-}
-.subscription-section{
-    margin-top: 50px;
-    background-image: url("Images/hero/hero-2.jpg");
-    background-size: cover;
-    border: none;
-    border-radius: 10px;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-.subscriptionHeading1{
-    text-align: center;
-    font-weight: bold;
-}
-.subscriptionHeading5{
-    text-align: center;
-    font-weight: 500;
-}
-.subscriptionButton{  
-    background-color: #374151;  
-    display: flex;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    transform: .5s;
-}
-.subscriptionButton:hover{
-    background-color: #7F8389;
-    color: white;
-}
-.subscriptionAnchoredLink{
-    color: white;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    font-weight: bold;
-}
-.subscriptionAnchoredLink:hover{
-    color:black;
-}
-.guide-section{
-    margin-top: 100px;
-    background-color: #192026;
+    height: 100%;
 }
 .guide-section-card{
     border: none;
     border-radius: 10px;
-    height: 350px;
-    background-color: #7F8389;
+    background-color: var(--bg-light-off);
+}
+/* Guide Section - Hover*/
+.guide-section-card:hover{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg-dark-base);
+    color: white;
+}
+.guide-section-card i:hover{
+    color: white;
+}
+.guide-section-card h3:hover{
+    color: white;
 }
 .guide-section-card a{
     text-decoration: none;
     color: white;
-}
-.guide-section-card h5{
-    overflow: hidden;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-size: 20pt;
 }
 .guide-section-card i{
-    margin-top: 90px;
-    overflow: hidden;
-    font-size: 50px;    
-    color: white;
+    padding-top: 100px;
     text-align: center;
+    font-size: 50px;
+    color: black;
 }
+.guideHeading3{
+    padding-bottom: 100px;
+    text-align: center;
+    color: black;
+}
+/* Guide Section - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .guide-section{
+        margin-top: 5px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: var(--bg-base);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide-section-card{
+        border: none;
+        border-radius: 10px;
+        background-color: var(--bg-light-off);
+    }
+    .guide-section-card i{
+        padding-top: 30px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+    }
+    .guideHeading3{
+        padding-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+}
+/* Guide Section - 480 Monitor*/
+@media only screen and (max-width:480px){
+    .guide-section{
+        margin-top: 5px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: var(--bg-base);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide-section-card{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--bg-light-off);
+    }
+    .guide-section-card i{
+        padding-top: 30px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+    }
+    .guideHeading3{
+        padding-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+}
+
+/* -------------- */
+
+/* FAQs Section */
+
 .faq-section{
-    margin-top: 100px;
+    margin-top: 5px;
     padding-bottom: 50px;
-    background-color: #7F8389;
+    background-color: var(--bg-dark-base);
 }
 .faqHeading1{
     margin-top: 50px;
     text-align: center;
     color: white;
-    font-weight: bold;
 }
 .faq-button{
     margin-bottom: 10px;
     width: 100%;
-    background-color: #D9D9D9;
+    background-color: var(--bg-light-off);
     border: none;
-    transition: .5s;
+    transition: var(--transition);
 }
+/* FAQs - Hover*/
 .faq-button:hover{
     border: none;
     color: white;
-    background-color: #192026;
+    background-color: var(--bg-base);
 }
 .faqHeading2{
     text-align: start;
 }
 .faq-collapse{
-    background-color: #7F8389;
+    color: white;
+    padding: 20px;
 }
+
+/* -------------- */
+
+/* ModalLogin Section */
+
 .modal-content{
+    width: 50%;
+    margin: auto;
     padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content img{
+    width: 50%;
+    margin-bottom: 50px;
+}
+.login-modal-section{
+    width: 100%;
+    margin: auto;
 }
 .loginModalHeader1{
-    font-weight: 900;
+    width: 100%;
+    margin: auto;
     margin-bottom: 30px;
+}
+.checkbox{
+    display: flex;
+    margin: auto;
 }
 .submit-btn{
     border: none;
     width: 100%;
     margin-bottom: 5px;
-    background-color: #D9D9D9;
-    transition: .5s;
-}
-.submit-btn:hover{
+    background-color: var(--bg-base);
     color: white;
-    background-color: #7F8389;
+    transition: var(--transition);
 }
 .reset-btn{
     border: none;
     width: 100%;
-    background-color: #D9D9D9;
-    transition: .5s;
+    background-color: var(--bg-base);
+    color: white;
+    transition: var(--transition);
+}
+/* LoginModal  - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .modal-content{
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* ModalLogin - Hover*/
+.submit-btn:hover{
+    color: white;
+    background-color: var(--bg-dark-base);
 }
 .reset-btn:hover{
     color: white;
-    background-color: #7F8389;
+    background-color:   var(--bg-dark-base);
 }
 .loginModalHeader5{
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
 }
-.login-modal-image{
-    object-fit: cover;
-}
-/* footer section CSS */
+
+/* -------------- */
+
+/* Footer Section CSS */
 
 .footer-section{
     padding: 2%;
-    background: var(--bg-white);
-  }
-  .footer-section a{
+    background: var(--bg-off-base);
+}
+.footer-section a{
     text-decoration: none;
     color: var(--bg-black);
-  }
-  .footer-section a:hover{
+}
+/* Footer - Hover*/
+.footer-section a:hover{
     text-decoration:underline;
     color: blue;
-  }
-  .footer-section i:hover{
+}
+.footer-section i:hover{
     font-weight: var(--fw-700);
     text-decoration:underline;
     color: blue;
-  }
-  .footer-section h1:hover{
+}
+.footer-section h1:hover{
     text-decoration:underline;
     color: blue;
-  }
-
-
-  .first-row h1{
-    color: var(--bg-black);
+}
+/* Footer Content*/
+.first-row img{
+    width: 100%;
     display: block;
     justify-content: center;
     align-items: center;
-  }
-  .second-row a{
+    margin-bottom: 30px;
+}
+/* Footer  - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .first-row{
+        align-items: center;
+        justify-content: center;
+    }
+    .first-row img{
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+.second-row a{
+    margin-top: 5px;
     display: block;
     justify-content: center;
     align-items: center;
-  }
-  .third-row a{
+    text-decoration: none;
+    color: black;
+}
+.third-row a{
+    margin-top: 5px;
     display: block;
     justify-content: center;
     align-items: center;
-  }
-  .fourth-row a{
+    text-decoration: none;
+    color: black;
+}
+.fourth-row a{
+    margin-top: 5px;
     display: block;
     justify-content: center;
     align-items: center;
-  }
-  .fifth-row {
+    text-decoration: none;
+    color: black;
+}
+.fifth-row {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: var(--bg-black);
-  }
-  .icon-box {
+}
+.fifthHeading4{
+    color: black;
+}
+.icon-box{
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px!important;
-    color: var(--bg-black);
-  }
-  .ender {
+    color: var(--bg-dark-base);
+}
+.ender {
+    background-color: var(--bg-dark-base);
     clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-  }
+}
+/* Footer Content - Hover*/
+.second-row a:hover{
+    text-decoration: none;
+    color: var(--bg-base);
+}
+.third-row a:hover{
+    text-decoration: none;
+    color: var(--bg-base);
+}
+.fourth-row a:hover{
+    text-decoration: none;
+    color: var(--bg-base);
+}
+.icon-box i:hover{    
+    color: var(--bg-base);
+}
+
+/* -------------- */
+
