@@ -94,9 +94,6 @@ button {
 .navbar-toggler{
     background-color: var(--bg-light-off);
 }
-.anchoredLogo img{
-    border: none;
-}
 .anchored-link-button{
     border: none;
 }
