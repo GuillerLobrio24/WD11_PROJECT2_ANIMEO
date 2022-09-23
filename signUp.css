@@ -1,8 +1,89 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+/* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;700&display=swap');
+
+    /* Root Styling */
+
+:root {
+
+/* color */
+
+    --bg-base: #94618E;
+    --bg-dark-base: #49274A;
+    --bg-off-base: #F4DECB;
+    --bg-light-off: #F8EEE7;
+
+/**typography**/
+
+    --ff-righteous:'Righteous', cursive;
+    --ff-reem: 'Reem Kufi Fun', sans-serif;
+
+  /**font size **/
+
+/**30px**/
+
+    --fs-1: 1.875rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.375rem;
+    --fs-4: 1.125rem;
+
+/**14px**/
+
+    --fs-5: 0.875rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+/**transition**/
+
+    --transition: 0.25s ease;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-reem);
+    background-color: var(--bg-off-base);
+    overflow-x: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-righteous);
+}
+
+p {
+    font-family: var(--ff-reem);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+i {
+    display: block !important;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+}    
+
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password],input[type=email] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -12,7 +93,7 @@ input[type=text], input[type=password] {
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -25,27 +106,26 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
 }
 .signupbtn{
-  background-color: #04AA6D;
+  background-color: var(--bg-base);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
+  transition: var(--transition);
   width: 100%;
-  opacity: 0.9;
 }
-button:hover {
-  opacity:1;
-}
+
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
+  border: none;
+  width: 100%;
+  background-color: var(--bg-base);
+  color: white;
+  transition: var(--transition);
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -69,7 +149,7 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: var(--bg-dark-base);
   padding-top: 50px;
 }
 
@@ -86,7 +166,7 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
- 
+
 /* The Close Button (x) */
 .close {
   position: absolute;
