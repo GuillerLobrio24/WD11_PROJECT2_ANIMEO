@@ -131,8 +131,8 @@ button {
     margin-top: 1px;
     background-color: var(--bg-base);
     border: none;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 175px;
+    padding-bottom: 175px;
 } 
 .subscriptionHeading1{
     text-align: center;
@@ -175,14 +175,13 @@ button {
     margin-top: 5px;
     padding-bottom: 50px;
     padding-top: 50px;
-    background-color: var(--bg-base);
     width: 100%;
     height: 100%;
 }
 .guide-section-card{
     border: none;
     border-radius: 10px;
-    background-color: var(--bg-light-off);
+    background-color: var(--bg-base);
 }
 /* Guide Section - Hover*/
 .guide-section-card:hover{

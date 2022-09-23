@@ -123,22 +123,37 @@ button {
     color: var(--bg-base);
 }
 .searchBar input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    border-radius: 50px;
-    margin-top: 8px;
-    margin-right: 20px;
-    font-size: 17px;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+}
+.user-icon-btn{
+  border: none;
+  width: 100%;
+  margin: auto;
+}
+.user-icon{
+  color: white;
+  font-size: 27px;
 }
 /* Navigation Bar Css - 760 Monitor*/
 @media only screen and (max-width:760px){
     .searchBar input[type=text] {
+        display: flex;
         align-items: center;
         justify-items: center;
         margin: auto;
-        margin-bottom: 20px;
         width: 100%;
+    }
+    .user-icon-btn{
+        align-items: center;
+        display: flex;
+        border: none;
+        width: 0%;
+        margin: 0px;
+        float: left !important;
     }
 }
 

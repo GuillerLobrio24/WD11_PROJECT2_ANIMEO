@@ -1,148 +1,166 @@
-    /* Google Fonts Import */
+/* Google Fonts Import */
 
-    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;700&display=swap');
-    
-        /* Root Styling */
-    
-    :root {
-    
-    /* color */
-    
-        --bg-base: #94618E;
-        --bg-dark-base: #49274A;
-        --bg-off-base: #F4DECB;
-        --bg-light-off: #F8EEE7;
-    
-    /**typography**/
-    
-        --ff-righteous:'Righteous', cursive;
-        --ff-reem: 'Reem Kufi Fun', sans-serif;
-    
-      /**font size **/
-    
-    /**30px**/
-    
-        --fs-1: 1.875rem;
-        --fs-2: 1.5rem;
-        --fs-3: 1.375rem;
-        --fs-4: 1.125rem;
-    
-    /**14px**/
-    
-        --fs-5: 0.875rem;
-        --fs-6: 0.813rem;
-        --fs-7: 0.75rem;
-    
-        --fw-400: 400;
-        --fw-500: 500;
-        --fw-700: 700;
-    
-    /**transition**/
-    
-        --transition: 0.25s ease;
-    
-    }
-    
-    html {
-        scroll-behavior: smooth;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: var(--ff-reem);
-        background-color: var(--bg-off-base);
-        overflow-x: auto;
-        overflow-x: hidden;
-        align-items: center;
-        justify-content: center;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: var(--ff-righteous);
-    }
-    
-    p {
-        font-family: var(--ff-reem);
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    i {
-        display: block !important;
-    }
-    button {
-        border: none;
-        outline: none;
-        background: none;
-    }
-    
-    /* Navigation Bar */
-    
-    .navigation-container{
-        background-color: var(--bg-dark-base);
-        width: 100%;
-        height: 100%;
-        margin-top: 1px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .navbar-toggler{
-        background-color: var(--bg-light-off);
-    }
-    .anchored-link-button{
-        border: none;
-    }
-    .anchored-link{
-        color: white;
-        transition: .5s;
-        text-decoration: none;
-    }
-    /* Anchored Link - 760 Monitor*/
-    @media only screen and (max-width:760px){
-        .anchoredLinks button{
-            padding: 0px;
-            display: block;
-            float: left;
-        }
-        .anchoredLinks a{
-            display: block;
-            float: left;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;700&display=swap');
+
+    /* Root Styling */
+
+:root {
+
+/* color */
+
+    --bg-base: #94618E;
+    --bg-dark-base: #49274A;
+    --bg-off-base: #F4DECB;
+    --bg-light-off: #F8EEE7;
+
+/**typography**/
+
+    --ff-righteous:'Righteous', cursive;
+    --ff-reem: 'Reem Kufi Fun', sans-serif;
+
+  /**font size **/
+
+/**30px**/
+
+    --fs-1: 1.875rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.375rem;
+    --fs-4: 1.125rem;
+
+/**14px**/
+
+    --fs-5: 0.875rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+/**transition**/
+
+    --transition: 0.25s ease;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-reem);
+    background-color: var(--bg-off-base);
+    overflow-x: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-righteous);
+}
+
+p {
+    font-family: var(--ff-reem);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+i {
+    display: block !important;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Navigation Bar */
+
+.navigation-container{
+    background-color: var(--bg-dark-base);
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navbar-toggler{
+    background-color: var(--bg-light-off);
+}
+.anchored-link-button{
+    border: none;
+}
+.anchored-link{
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+}
+/* Anchored Link - 760 Monitor*/
+@media only screen and (max-width:760px){
+    .anchoredLinks button{
+        padding: 0px;
+        display: block;
+        float: left;
     }
     .anchoredLinks a{
-        color: white;
-        transition: .5s;
+        display: block;
+        float: left;
     }
-    /* Anchored Link - Hover*/
-    .anchoredLinks a:hover{
-        color: var(--bg-base);
-    }
-    .searchBar input[type=text] {
-        float: right;
-        padding: 6px;
-        border: none;
-        border-radius: 50px;
-        margin-top: 8px;
-        margin-right: 20px;
-        font-size: 17px;
-    }
-    /* Navigation Bar Css - 760 Monitor*/
-    @media only screen and (max-width:760px){
-        .searchBar input[type=text] {
-            align-items: center;
-            justify-items: center;
-            margin: auto;
-            margin-bottom: 20px;
-            width: 100%;
-        }
-    }
-    
-    /* -------------- */
+}
+.anchoredLinks a{
+    color: white;
+    transition: .5s;
+}
+/* Anchored Link - Hover*/
+.anchoredLinks a:hover{
+    color: var(--bg-base);
+}
+.searchBar input[type=text] {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+}
+.user-icon-btn{
+  border: none;
+  width: 100%;
+  margin: auto;
+}
+.user-icon{
+  color: white;
+  font-size: 27px;
+}
+/* Navigation Bar Css - 760 Monitor*/
+@media only screen and (max-width:760px){
+  .searchBar input[type=text] {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    width: 100%;
+}
+.user-icon-btn{
+    align-items: center;
+    display: flex;
+    border: none;
+    width: 0%;
+    margin: 0px;
+    float: left !important;
+}
+}
+
+/* -------------- */
+
+/* About Us Container */
+
 .container-about {
   margin-top: 30px;
   width: auto;
@@ -150,10 +168,14 @@
   background: var(--bg-off-base);
   border-radius: 10px;
 }
-.about-container h1,
-p {
+.about-container h1{
   padding-top: 5rem;
   text-align: center;
+  color: var(--bg-black);
+}
+.about-container p{
+  padding-top: 5rem;
+  text-align: justify;
   color: var(--bg-black);
 }
 .about-container .row {
@@ -161,31 +183,26 @@ p {
   padding-top: 4rem;
   color: black;
 }
-
 .about-img-container {
   padding: 15px;
-
-  /* margin: 10px; */
 }
 .about-img-container img{
   margin:auto;
   border-radius: 10px;
 }
 .mc-container{
-
     padding: 0.5rem 1rem;
     display: grid;
     place-items: center;
     /* position: relative; */
-
 }
 .mc-container p{
 color: var(--bg-white);
 }
 .about-img1{
   text-align: center;
-  background-color: var(--bg-grey);
-  color: var(--bg-white);
+  background-color: var(--bg-base);
+  color: white  ;
   border-radius: .8rem;
   padding: 1rem 5px;
   width: 200px;
@@ -200,8 +217,7 @@ color: var(--bg-white);
   border-radius: 10px;
   z-index: 5;
   position: relative;
-  margin: auto!important;
-
+  margin: auto  !important;
 }
 .about-img1 #letter1 {
   color: #2e2a2a83;
@@ -214,7 +230,6 @@ color: var(--bg-white);
   -webkit-background-clip: text;
 /* -webkit-text-fill-color: transparent;   */
   font-family: var(--ff-roboto);
-
 }
 .test-container {
   margin-top: 10px;
@@ -244,40 +259,29 @@ color: var(--bg-white);
   align-items: center;
   gap: 20px;
 }
-.section-contact {
+.contact-section {
   background-color: var(--bg-base);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.input-name,
-.input-lastname,
-.input-email,
-.input-number {
-  position: relative;
-  left: 20px;
-  width: 210px;
-  height: auto;
-  border-radius: 5px;
-  color: var(--bg-white);
-  z-index: 99;
+.contact-container{
+  background-color: var(--bg-dark-base);
+  padding: 20px;
 }
-.input-news {
-  width: 400px;
-  height: auto;
-  border-radius: 5px;
-}
-textarea {
-  height: auto;
-  margin: auto;
-  border-radius: 10px;
-}
-.submit-btn {
-  width: 100px;
-  height: 30px;
-  margin: auto;
-  border-radius: 5px;
+.contact-container label{
   color: white;
 }
+.submit-btn{
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+.submit-btn:hover{
+  border: none;
+  background-color: var(--bg-base);
+  color: white;
+}
+
 /* -------------- */
 
 /* Footer Section CSS */
