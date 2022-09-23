@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./signUp.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -64,7 +65,8 @@
 
               <div class="col-md-2 anchoredLinks">
 
-                <a class="nav-link" href="SignUpPage.html"><h3>Sign Up</h3></a>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+                <!-- <a class="nav-link" href="SignUpPage.html"><h3>Sign Up</h3></a> -->
 
               </div>
 
@@ -333,6 +335,39 @@
 
     </div>
 
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="username"><b>Username</b></label>
+          <input id="userName" type="text" placeholder="Enter Username" name="username" required>
+    
+          <label for="email"><b>E-mail</b></label>
+          <input id="eMail" type="e-mail" placeholder="Enter E-mail" name="e-mail" required>
+    
+          <label for="pswd"><b>Password</b></label>
+          <input id="passWord" type="password" placeholder="Password" name="psw" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    
+
+
     <!-- Footer -->
 
     <footer>
@@ -426,7 +461,18 @@
       </div>
 
     </footer>
-
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  
+  </script>
   </body>
 
 <script src="js/bootstrap.bundle.js"></script>
